@@ -5,7 +5,7 @@
   </header>
 
   <div class="order-summary jumbotron">
-    <h4>Thank you for your order <%= @order.email %>! </h4>
+    <h4>Thank you for your order <%= current_user.email %>! </h4>
   
     <table class="table table-bordered">
     <thead>
@@ -18,10 +18,23 @@
       </tr>
     </thead>
     <tbody>
-      <% @line_items.each do |item| %>
-        
-        <%= render 'item', product: Product.find(item.product_id)%>
-      <% end %>
+    <% @order.line_items.each do |line_item| %>
+      <tr><td>
+      <div><%= image_tag line_item.product.image.tiny %></div>
+      </td>
+      <td>
+      <div><%= line_item.product.name %></div>
+      </td>
+      <td>
+      <div><%= line_item.product.description %></div>
+      </td>
+      <td>
+      <div><%= line_item.quantity %></div>
+      </td>
+      <td>
+      <div><%= humanized_money_with_symbol line_item.total_price %></div>
+      </td></tr>
+    <% end %>
     </tbody>
     <tfoot>
       <tr>
