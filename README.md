@@ -4,10 +4,11 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Final Product
 
-!["Screenshot of URLs page"](https://github.com/lighthouse-labs/tinyapp/blob/master/docs/urls-page.png)
+!["Screenshot of furniture page"](https://github.com/yq4103/jungle-rails/blob/master/docs/category.png?raw=true)
 
-!["Screenshot of register page"](https://github.com/lighthouse-labs/tinyapp/blob/master/docs/register-page.png)
+!["Screenshot of an item in the cart"](https://github.com/yq4103/jungle-rails/blob/master/docs/cart.png?raw=true)
 
+!["Screenshot of an empty cart"](https://github.com/yq4103/jungle-rails/blob/master/docs/empty%20cart.png?raw=true)
 
 ## Additional Steps for Apple M1 Machines
 
